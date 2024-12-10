@@ -17,7 +17,7 @@ const NavBar = () => {
               <a href="">Contacto</a>
               <a href="">Catalogo</a>
               <a href="">Unirse</a>
-              <div className="btn btn-outline-warning text-warning p-2 text-dark"onClick={showNavBar}>
+              <div className="btn close btn-outline-warning text-warning p-2 text-dark"onClick={showNavBar}>
                   <FaTimes/>
               </div>
             </nav>
