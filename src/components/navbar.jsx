@@ -2,6 +2,9 @@ import React from 'react';
 import './Navbar.css';
 import { useRef } from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
+import app from '../firebase/firebaseConfig';
+import { getAuth, signOut } from 'firebase/auth';
+const auth= getAuth(app); 
 
 const NavBar = () => {
   const navRef = useRef();
@@ -24,6 +27,7 @@ const NavBar = () => {
           <button className="btn btn-outline-warning text-dark"onClick={showNavBar}>
             <FaBars/>
           </button>
+          <button onClick={()=> signOut(auth)}>cerrar sesion</button>
         </header>
     
   )

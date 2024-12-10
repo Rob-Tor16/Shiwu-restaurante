@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css';
+import NavBar from '../components/navbar';
 
 const Home = () => {
+  
   return (
+    <>
+    <NavBar/>
     <section className="home position-relative text-white">
       <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
       
@@ -40,6 +44,8 @@ const Home = () => {
         </div>
       </div>
     </section>
+    </>
+    
   );
 };
 
